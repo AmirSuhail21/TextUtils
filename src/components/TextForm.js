@@ -26,7 +26,7 @@ const [text, setText] = useState('Amir Is A Good Boy 👦'); // Enter Text Here
 return(
   <>
 <div>
-<h1>{props.heading}</h1>
+<h2>{props.heading}</h2>
 <div className="mb-2 p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
  <i>
   <textarea className="form-control text-dark bg-light" value = {text} onChange = {handleOnChange} id="myBox" rows="8"></textarea>
@@ -39,10 +39,10 @@ return(
 </div>
 
 <div className='containor my-3'>
-  <h2>Your Text Summary</h2>
+  <h3>Your Text Summary</h3>
   <p>{text.split(" ").length} Words And {text.length} Characters</p>
   <p>{0.008*text.split(" ").length} Minutes Read</p>
-  <h2>Preview</h2>
+  <h3>Preview</h3>
   <p> {text} </p>
 </div>
 </>
