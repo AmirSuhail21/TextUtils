@@ -15,10 +15,34 @@ const handdleLcClick = () =>{
   setText(newText);
 }
 
+//  To Clear Text !  
+const handdleClearClick = () =>{
+  let newText = ""; 
+  setText(newText);
+}
+
+//Copy All Text
+const handdleCopyAllClick=()=>{
+  let text = document.getElementById("myBox");
+  text.select();
+  text.setSelectionRange(0,99999999999999);
+  navigator.clipboard.writeText(text.value);
+}
+
+// HandleExtraSpaces
+
+const HandleExtraSpaces = ()=>{
+  let newText = text.split(/[ ]+/);
+  setText(newText.join(" "));
+}
+
+
 // -------->
 const handleOnChange = (event) =>{
   setText(event.target.value);
 }
+
+
 
 const [text, setText] = useState('Amir Is A Good Boy 👦'); // Enter Text Here
 // text = "Amir Suhail"  // Wrong Method !
@@ -32,9 +56,12 @@ return(
   <textarea className="form-control text-dark bg-light" value = {text} onChange = {handleOnChange} id="myBox" rows="8"></textarea>
 </i>
 </div>
-<div className='d-grid gap-2 col-6 mx-auto'>
-  <button className="btn btn-primary " onClick={handdleUpClick}>Convert To Uppercase</button>
-  <button className="btn btn-primary" onClick={handdleLcClick}>Convert To Lowercase</button>
+<div>
+  <button className="btn btn-primary mx-1 mb-2 my-3" onClick={handdleUpClick}>Convert To Uppercase</button>
+  <button className="btn btn-primary mx-1 mb-2  my-3" onClick={handdleLcClick}>Convert To Lowercase</button>
+  <button className="btn btn-primary mx-1 mb-2 my-3" onClick={handdleClearClick}>Clear All</button> 
+  <button className="btn btn-primary mx-1 mb-2 my-3" onClick={handdleCopyAllClick}>Copy All Text</button> 
+  <button className="btn btn-primary mx-1 mb-2 my-3" onClick={HandleExtraSpaces}>Remove Extra Spaces</button>
 </div>
 </div>
 
@@ -48,3 +75,5 @@ return(
 </>
     )
 }
+
+
