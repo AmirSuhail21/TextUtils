@@ -3,7 +3,7 @@ import React, {useState}from 'react'
 
 export default function TextForm(props){
 
-// To UpperCase !!
+// To UpperCase !
 const handdleUpClick = () =>{
   let newText = text.toUpperCase(); 
   setText(newText);
