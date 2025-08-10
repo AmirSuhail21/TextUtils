@@ -46,7 +46,7 @@ const handleOnChange = (event) =>{
 
 const [text, setText] = useState('Amir Is A Good Boy 👦'); // Enter Text Here
 // text = "Amir Suhail"  // Wrong Method !
-// setText("Amir Suhail"); // Right Method !
+// setText("Amir Suhail"); // Right Method !!
 return(
   <>
           <div className = 'container' style={{color : props.mode==='dark'?'white':'black'}}>
