@@ -45,15 +45,15 @@ const handleOnChange = (event) =>{
 
 
 const [text, setText] = useState('Amir Is A Good Boy 👦'); // Enter Text Here
-// text = "Amir Suhail"  // Wrong Method !
-// setText("Amir Suhail"); // Right Method !!
+// text = "Amir Suhail"  // Wrong Method!
+// setText("Amir Suhail"); // Right Method!
 return(
   <>
           <div className = 'container' style={{color : props.mode==='dark'?'white':'black'}}>
               <h2>{props.heading}</h2>
                     <div className="mb-2 p-3 ">
                           <i>
-                                <textarea className="form-control" value = {text} onChange = {handleOnChange} style={{backgroundColor : props.mode==='dark'?'gray':'white', color : 'white'}} id="myBox" rows="8"></textarea>
+                                <textarea className="form-control" value = {text} onChange = {handleOnChange} style={{backgroundColor : props.mode==='dark'?'gray':'white', color : props.mode==='dark'?'white':'black'}} id="myBox" rows="8"></textarea>
                           </i>
                     </div>
                     
