@@ -1,15 +1,16 @@
 import "./App.css";
+import Alert from "./components/Alert";
 // import About from "./components/About";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import React, {useState} from 'react'
 
-function App() {
+function App() { 
   const [mode, setmode] = useState('light') // wheather dark mode is enable or not
   const toggleMode = () =>{
     if(mode === 'light'){ 
       setmode('dark')
-      document.body.style.backgroundColor = 'gray';
+      document.body.style.backgroundColor = '#1e2c52';
       // document.body.style.color = 'white';
 
     }else{
@@ -24,14 +25,16 @@ function App() {
 
   <Navbar title = "Textutils" mode = {mode} toggleMode = {toggleMode}/>
 
+  <Alert alert = "This Is A Alert!"/>
 
-<div className="container my-3">
+<div classNameName="container my-3">
   <TextForm heading = "Enter The Text To Analyze Below" mode = {mode} /> 
   </div>
 
   
   {/* <About/> */}
-
+  
+  
     </>
   );
 }
