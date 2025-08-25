@@ -65,7 +65,7 @@ return(
                     </div>
           </div>
 
-          <div className='containor my-3 mx-1'  style={{color : props.mode==='dark'?'white':'black'}}>
+          <div className='container mb-2 p-3'  style={{color : props.mode==='dark'?'white':'black'}}>
                     <h3 >Your Text Summary </h3>
                     <p>{text.split(" ").length} Words And {text.length} Characters</p>
                     <p>{0.008*text.split(" ").length} Minutes Read</p>
