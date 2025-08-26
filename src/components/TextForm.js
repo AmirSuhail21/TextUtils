@@ -6,18 +6,21 @@ export default function TextForm(props){
 const handdleUpClick = () =>{
   let newText = text.toUpperCase(); 
   setText(newText);
+  props.showAlert("Convert To Uppercase","success");
 }
 
 //  To LowerCase !
 const handdleLcClick = () =>{
   let newText = text.toLowerCase(); 
   setText(newText);
+  props.showAlert("Convert To Lowercase","success");
 }
 
 //  To Clear Text !  
 const handdleClearClick = () =>{
   let newText = ""; 
   setText(newText);
+  props.showAlert("Clear All","success");
 }
 
 //Copy All Text
@@ -26,6 +29,7 @@ const handdleCopyAllClick=()=>{
   text.select();
   text.setSelectionRange(0,99999999999999);
   navigator.clipboard.writeText(text.value);
+  props.showAlert("Copied All Text","success");
 }
 
 // HandleExtraSpaces
@@ -33,6 +37,7 @@ const handdleCopyAllClick=()=>{
 const HandleExtraSpaces = ()=>{
   let newText = text.split(/[ ]+/);
   setText(newText.join(" "));
+  props.showAlert("Remove Extra Spaces","success");
 }
 
 
@@ -57,11 +62,19 @@ return(
                     </div>
                     
                     <div>
-                          <button className="btn btn-primary mx-1 mb-2 my-3" onClick={handdleUpClick}>Convert To Uppercase</button>
-                          <button className="btn btn-primary mx-1 mb-2  my-3" onClick={handdleLcClick}>Convert To Lowercase</button>
-                          <button className="btn btn-primary mx-1 mb-2 my-3" onClick={handdleClearClick}>Clear All</button>
-                          <button className="btn btn-primary mx-1 mb-2 my-3" onClick={handdleCopyAllClick}>Copy All Text</button> 
-                          <button className="btn btn-primary mx-1 mb-2 my-3" onClick={HandleExtraSpaces}>Remove Extra Spaces</button>
+                          <button className="btn btn-primary mx-1 mb-2 my-3" onClick={handdleUpClick}>Convert To Uppercase
+                          </button>
+                          <button className="btn btn-primary mx-1 mb-2  my-3" onClick={handdleLcClick}>Convert To Lowercase
+                          
+                          </button>
+                          <button className="btn btn-primary mx-1 mb-2 my-3" onClick={handdleClearClick}>Clear All
+                          
+                          </button>
+                          <button className="btn btn-primary mx-1 mb-2 my-3" onClick={handdleCopyAllClick}>Copy All Text
+                          
+                          </button> 
+                          <button className="btn btn-primary mx-1 mb-2 my-3" onClick={HandleExtraSpaces}>Remove Extra Spaces
+                          </button>
                     </div>
           </div>
 
