@@ -48,7 +48,7 @@ const handleOnChange = (event) =>{
 
 
 
-const [text, setText] = useState('Amir Is A Good Boy 👦'); // Enter Text Here
+const [text, setText] = useState('Hello Amir , How Are You'); // Enter Text Here
 // text = "Amir Suhail"  // Wrong Method!
 // setText("Amir Suhail"); // Right Method!
 return(
