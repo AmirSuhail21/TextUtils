@@ -14,7 +14,8 @@ TextUtils is a simple yet powerful text manipulation tool built using **React JS
 ## 🖼️ Screenshot
 
 ![App Screenshot]
-<img<img width="1365" height="634" alt="Screenshot 2025-08-26 151719" src="https://github.com/user-attachments/assets/8006216d-3fc9-4846-843c-b3b75ff88dfa" />
+<img<img <img width="1365" height="628" alt="image" src="https://github.com/user-attachments/assets/96d14fa4-72d4-4be5-9a8e-f10e39a0e174" />
+ />
 />
 
 
