@@ -62,18 +62,18 @@ return(
                     </div>
                     
                     <div>
-                          <button className="btn btn-primary mx-1 mb-2 my-3" onClick={handdleUpClick}>Convert To Uppercase
+                          <button className="btn btn-success mx-1 mb-2 my-3" onClick={handdleUpClick}>Convert To Uppercase
                           </button>
                           <button className="btn btn-primary mx-1 mb-2  my-3" onClick={handdleLcClick}>Convert To Lowercase
                           
                           </button>
-                          <button className="btn btn-primary mx-1 mb-2 my-3" onClick={handdleClearClick}>Clear All
+                          <button className="btn btn-danger mx-1 mb-2 my-3" onClick={handdleClearClick}>Clear All
                           
                           </button>
-                          <button className="btn btn-primary mx-1 mb-2 my-3" onClick={handdleCopyAllClick}>Copy All Text
+                          <button className="btn btn-success mx-1 mb-2 my-3" onClick={handdleCopyAllClick}>Copy All Text
                           
                           </button> 
-                          <button className="btn btn-primary mx-1 mb-2 my-3" onClick={HandleExtraSpaces}>Remove Extra Spaces
+                          <button className="btn btn-warning mx-1 mb-2 my-3" onClick={HandleExtraSpaces}>Remove Extra Spaces
                           </button>
                     </div>
           </div>
