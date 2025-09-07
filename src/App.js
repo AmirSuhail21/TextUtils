@@ -31,7 +31,7 @@ function App() {
       showAlert("Dark Mode Has Been Enabled","success");
       document.title = "TextUtils - Dark Mode";
 
-      // This Is A setIntervel - -  ->
+      // This Is A setIntervel - - - ->
       // setInterval(() => {
       //   document.title = "TextUtils Is A Amazing";
       // }, 2000);
