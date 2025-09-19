@@ -3,7 +3,7 @@
 TextUtils is a simple yet powerful text manipulation tool built using **React JS**. This app allows users to analyze and transform their text in real-time.
 
 ## ✨ Features
-
+🌐 **Live Demo**: [Click Here](https://amirsuhail21.github.io/TextUtils/)
 - 🔠 **Convert to Uppercase**
 - 🔡 **Convert to Lowercase**
 - 🔢 **Word and Character Count**
